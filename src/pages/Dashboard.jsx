@@ -44,10 +44,6 @@ const Dashboard = () => {
         <div className="flex items-center justify-center min-h-[60vh]">
             <div className="max-w-2xl w-full text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
                 <div className="space-y-4">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 text-[10px] font-black uppercase tracking-widest mb-4">
-                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
-                        Dashboard Active
-                    </div>
                     <h2 className="text-6xl font-black text-white uppercase tracking-tighter leading-none">
                         Welcome back,<br />
                         <span className="text-blue-500">{user?.name || 'User'}</span>

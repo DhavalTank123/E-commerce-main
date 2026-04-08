@@ -14,20 +14,20 @@ const Cart = () => {
 
     if (items.length === 0) {
         return (
-            <div className="flex flex-col items-center justify-center min-h-[400px] p-6 bg-white rounded-2xl shadow-sm border border-blue-50 dark:border-gray-700">
-                <div className="w-20 h-20 bg-blue-50 dark:bg-blue-900/20 rounded-full flex items-center justify-center mb-6">
-                    <ShoppingBag className="w-10 h-10 text-blue-600 dark:text-blue-400" />
+            <div className="flex flex-col items-center justify-center min-h-[500px] p-8 bg-slate-900/50 rounded-3xl backdrop-blur-sm border border-slate-800 transition-all duration-500 hover:border-slate-700/50">
+                <div className="w-24 h-24 bg-slate-800/80 rounded-2xl flex items-center justify-center mb-8 shadow-2xl border border-slate-700 rotate-3 transition-transform hover:rotate-0">
+                    <ShoppingBag className="w-12 h-12 text-blue-500" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">Your cart is empty</h2>
-                <p className="text-gray-500 dark:text-gray-400 mb-8 text-center max-w-xs">
-                    Looks like you haven't added anything to your cart yet.
+                <h2 className="text-3xl font-black text-white mb-3 uppercase tracking-tight">Your cart is empty</h2>
+                <p className="text-slate-400 mb-10 text-center max-w-sm font-medium leading-relaxed">
+                    Looks like your aesthetic journey hasn't started yet. Browse our curated collection and find your perfect style.
                 </p>
                 <Link
                     to="/products"
-                    className="flex items-center gap-2 px-8 py-3 bg-black hover:bg-gray-800 text-white font-black text-xs uppercase tracking-widest rounded-xl transition duration-300 shadow-lg shadow-black/10 active:scale-95"
+                    className="flex items-center gap-3 px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-black text-xs uppercase tracking-[0.2em] rounded-2xl transition-all duration-300 shadow-2xl shadow-blue-900/40 hover:scale-105 active:scale-95"
                 >
                     <span>Explore Products</span>
-                    <ArrowRight size={16} />
+                    <ArrowRight size={18} />
                 </Link>
             </div>
         );

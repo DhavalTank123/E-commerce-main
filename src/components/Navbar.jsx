@@ -58,17 +58,7 @@ const Navbar = ({ onToggleSidebar }) => {
                 </div>
             </div>
 
-            <div className={`hidden sm:flex items-center gap-2 text-sm font-black px-4 py-2 rounded-xl transition-all duration-300
-                ${isWarning
-                    ? 'bg-red-500/10 text-red-500 border border-red-500/20 animate-pulse'
-                    : 'bg-blue-500/10 text-blue-500 border border-blue-500/20'
-                }`}>
-                <Timer size={16} />
-                <span className="tabular-nums">Session: {timeLeft}</span>
-            </div>
-
             <div className="flex items-center gap-2 sm:gap-4">
-
                 <button
                     onClick={handleLogout}
                     className="flex items-center gap-2 p-2 sm:px-4 sm:py-2.5 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-xs font-black uppercase tracking-widest rounded-xl transition duration-300 shadow-lg shadow-blue-950/20"
